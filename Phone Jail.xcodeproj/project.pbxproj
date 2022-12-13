@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A196BE5129493A18002A7C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5029493A18002A7C69 /* AppDelegate.swift */; };
+		A196BE5329493A18002A7C69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5229493A18002A7C69 /* SceneDelegate.swift */; };
+		A196BE5529493A18002A7C69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5429493A18002A7C69 /* ViewController.swift */; };
+		A196BE5829493A18002A7C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A196BE5629493A18002A7C69 /* Main.storyboard */; };
+		A196BE5B29493A18002A7C69 /* Phone_Jail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5929493A18002A7C69 /* Phone_Jail.xcdatamodeld */; };
+		A196BE5D29493A19002A7C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A196BE5C29493A19002A7C69 /* Assets.xcassets */; };
+		A196BE6029493A19002A7C69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A196BE5E29493A19002A7C69 /* LaunchScreen.storyboard */; };
+		A196BE6B29493A19002A7C69 /* Phone_JailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE6A29493A19002A7C69 /* Phone_JailTests.swift */; };
+		A196BE7529493A19002A7C69 /* Phone_JailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE7429493A19002A7C69 /* Phone_JailUITests.swift */; };
+		A196BE7729493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE7629493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A196BE6729493A19002A7C69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A196BE4529493A18002A7C69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A196BE4C29493A18002A7C69;
+			remoteInfo = "Phone Jail";
+		};
+		A196BE7129493A19002A7C69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A196BE4529493A18002A7C69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A196BE4C29493A18002A7C69;
+			remoteInfo = "Phone Jail";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A196BE4D29493A18002A7C69 /* Phone Jail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phone Jail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A196BE5029493A18002A7C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A196BE5229493A18002A7C69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A196BE5429493A18002A7C69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A196BE5729493A18002A7C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A196BE5A29493A18002A7C69 /* Phone_Jail.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phone_Jail.xcdatamodel; sourceTree = "<group>"; };
+		A196BE5C29493A19002A7C69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A196BE5F29493A19002A7C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A196BE6129493A19002A7C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A196BE6629493A19002A7C69 /* Phone JailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phone JailTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A196BE6A29493A19002A7C69 /* Phone_JailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone_JailTests.swift; sourceTree = "<group>"; };
+		A196BE7029493A19002A7C69 /* Phone JailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phone JailUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A196BE7429493A19002A7C69 /* Phone_JailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone_JailUITests.swift; sourceTree = "<group>"; };
+		A196BE7629493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone_JailUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A196BE4A29493A18002A7C69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A196BE6329493A19002A7C69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A196BE6D29493A19002A7C69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A196BE4429493A18002A7C69 = {
+			isa = PBXGroup;
+			children = (
+				A196BE4F29493A18002A7C69 /* Phone Jail */,
+				A196BE6929493A19002A7C69 /* Phone JailTests */,
+				A196BE7329493A19002A7C69 /* Phone JailUITests */,
+				A196BE4E29493A18002A7C69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A196BE4E29493A18002A7C69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A196BE4D29493A18002A7C69 /* Phone Jail.app */,
+				A196BE6629493A19002A7C69 /* Phone JailTests.xctest */,
+				A196BE7029493A19002A7C69 /* Phone JailUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A196BE4F29493A18002A7C69 /* Phone Jail */ = {
+			isa = PBXGroup;
+			children = (
+				A196BE5029493A18002A7C69 /* AppDelegate.swift */,
+				A196BE5229493A18002A7C69 /* SceneDelegate.swift */,
+				A196BE5429493A18002A7C69 /* ViewController.swift */,
+				A196BE5629493A18002A7C69 /* Main.storyboard */,
+				A196BE5C29493A19002A7C69 /* Assets.xcassets */,
+				A196BE5E29493A19002A7C69 /* LaunchScreen.storyboard */,
+				A196BE6129493A19002A7C69 /* Info.plist */,
+				A196BE5929493A18002A7C69 /* Phone_Jail.xcdatamodeld */,
+			);
+			path = "Phone Jail";
+			sourceTree = "<group>";
+		};
+		A196BE6929493A19002A7C69 /* Phone JailTests */ = {
+			isa = PBXGroup;
+			children = (
+				A196BE6A29493A19002A7C69 /* Phone_JailTests.swift */,
+			);
+			path = "Phone JailTests";
+			sourceTree = "<group>";
+		};
+		A196BE7329493A19002A7C69 /* Phone JailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A196BE7429493A19002A7C69 /* Phone_JailUITests.swift */,
+				A196BE7629493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift */,
+			);
+			path = "Phone JailUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A196BE4C29493A18002A7C69 /* Phone Jail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A196BE7A29493A19002A7C69 /* Build configuration list for PBXNativeTarget "Phone Jail" */;
+			buildPhases = (
+				A196BE4929493A18002A7C69 /* Sources */,
+				A196BE4A29493A18002A7C69 /* Frameworks */,
+				A196BE4B29493A18002A7C69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Phone Jail";
+			productName = "Phone Jail";
+			productReference = A196BE4D29493A18002A7C69 /* Phone Jail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A196BE6529493A19002A7C69 /* Phone JailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A196BE7D29493A19002A7C69 /* Build configuration list for PBXNativeTarget "Phone JailTests" */;
+			buildPhases = (
+				A196BE6229493A19002A7C69 /* Sources */,
+				A196BE6329493A19002A7C69 /* Frameworks */,
+				A196BE6429493A19002A7C69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A196BE6829493A19002A7C69 /* PBXTargetDependency */,
+			);
+			name = "Phone JailTests";
+			productName = "Phone JailTests";
+			productReference = A196BE6629493A19002A7C69 /* Phone JailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A196BE6F29493A19002A7C69 /* Phone JailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A196BE8029493A19002A7C69 /* Build configuration list for PBXNativeTarget "Phone JailUITests" */;
+			buildPhases = (
+				A196BE6C29493A19002A7C69 /* Sources */,
+				A196BE6D29493A19002A7C69 /* Frameworks */,
+				A196BE6E29493A19002A7C69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A196BE7229493A19002A7C69 /* PBXTargetDependency */,
+			);
+			name = "Phone JailUITests";
+			productName = "Phone JailUITests";
+			productReference = A196BE7029493A19002A7C69 /* Phone JailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A196BE4529493A18002A7C69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					A196BE4C29493A18002A7C69 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					A196BE6529493A19002A7C69 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A196BE4C29493A18002A7C69;
+					};
+					A196BE6F29493A19002A7C69 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A196BE4C29493A18002A7C69;
+					};
+				};
+			};
+			buildConfigurationList = A196BE4829493A18002A7C69 /* Build configuration list for PBXProject "Phone Jail" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A196BE4429493A18002A7C69;
+			productRefGroup = A196BE4E29493A18002A7C69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A196BE4C29493A18002A7C69 /* Phone Jail */,
+				A196BE6529493A19002A7C69 /* Phone JailTests */,
+				A196BE6F29493A19002A7C69 /* Phone JailUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A196BE4B29493A18002A7C69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A196BE6029493A19002A7C69 /* LaunchScreen.storyboard in Resources */,
+				A196BE5D29493A19002A7C69 /* Assets.xcassets in Resources */,
+				A196BE5829493A18002A7C69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A196BE6429493A19002A7C69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A196BE6E29493A19002A7C69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A196BE4929493A18002A7C69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A196BE5B29493A18002A7C69 /* Phone_Jail.xcdatamodeld in Sources */,
+				A196BE5529493A18002A7C69 /* ViewController.swift in Sources */,
+				A196BE5129493A18002A7C69 /* AppDelegate.swift in Sources */,
+				A196BE5329493A18002A7C69 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A196BE6229493A19002A7C69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A196BE6B29493A19002A7C69 /* Phone_JailTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A196BE6C29493A19002A7C69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A196BE7529493A19002A7C69 /* Phone_JailUITests.swift in Sources */,
+				A196BE7729493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A196BE6829493A19002A7C69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A196BE4C29493A18002A7C69 /* Phone Jail */;
+			targetProxy = A196BE6729493A19002A7C69 /* PBXContainerItemProxy */;
+		};
+		A196BE7229493A19002A7C69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A196BE4C29493A18002A7C69 /* Phone Jail */;
+			targetProxy = A196BE7129493A19002A7C69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A196BE5629493A18002A7C69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A196BE5729493A18002A7C69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A196BE5E29493A19002A7C69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A196BE5F29493A19002A7C69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A196BE7829493A19002A7C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A196BE7929493A19002A7C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A196BE7B29493A19002A7C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC886WC3WY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Phone Jail/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "villegas.ventures.Phone-Jail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A196BE7C29493A19002A7C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC886WC3WY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Phone Jail/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "villegas.ventures.Phone-Jail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A196BE7E29493A19002A7C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC886WC3WY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "villegas.ventures.Phone-JailTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phone Jail.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phone Jail";
+			};
+			name = Debug;
+		};
+		A196BE7F29493A19002A7C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC886WC3WY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "villegas.ventures.Phone-JailTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phone Jail.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phone Jail";
+			};
+			name = Release;
+		};
+		A196BE8129493A19002A7C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC886WC3WY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "villegas.ventures.Phone-JailUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Phone Jail";
+			};
+			name = Debug;
+		};
+		A196BE8229493A19002A7C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC886WC3WY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "villegas.ventures.Phone-JailUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Phone Jail";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A196BE4829493A18002A7C69 /* Build configuration list for PBXProject "Phone Jail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A196BE7829493A19002A7C69 /* Debug */,
+				A196BE7929493A19002A7C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A196BE7A29493A19002A7C69 /* Build configuration list for PBXNativeTarget "Phone Jail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A196BE7B29493A19002A7C69 /* Debug */,
+				A196BE7C29493A19002A7C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A196BE7D29493A19002A7C69 /* Build configuration list for PBXNativeTarget "Phone JailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A196BE7E29493A19002A7C69 /* Debug */,
+				A196BE7F29493A19002A7C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A196BE8029493A19002A7C69 /* Build configuration list for PBXNativeTarget "Phone JailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A196BE8129493A19002A7C69 /* Debug */,
+				A196BE8229493A19002A7C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A196BE5929493A18002A7C69 /* Phone_Jail.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A196BE5A29493A18002A7C69 /* Phone_Jail.xcdatamodel */,
+			);
+			currentVersion = A196BE5A29493A18002A7C69 /* Phone_Jail.xcdatamodel */;
+			path = Phone_Jail.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A196BE4529493A18002A7C69 /* Project object */;
+}
