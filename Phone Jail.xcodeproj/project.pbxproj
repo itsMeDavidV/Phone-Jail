@@ -17,6 +17,22 @@
 		A196BE6B29493A19002A7C69 /* Phone_JailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE6A29493A19002A7C69 /* Phone_JailTests.swift */; };
 		A196BE7529493A19002A7C69 /* Phone_JailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE7429493A19002A7C69 /* Phone_JailUITests.swift */; };
 		A196BE7729493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE7629493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift */; };
+		A196BE8C29493A9B002A7C69 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8529493A9A002A7C69 /* MainViewController.swift */; };
+		A196BE8D29493A9B002A7C69 /* CreatePJSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8629493A9A002A7C69 /* CreatePJSessionViewController.swift */; };
+		A196BE8E29493A9B002A7C69 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8729493A9A002A7C69 /* SignUpViewController.swift */; };
+		A196BE8F29493A9B002A7C69 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8829493A9B002A7C69 /* FirstViewController.swift */; };
+		A196BE9029493A9B002A7C69 /* JoinSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8929493A9B002A7C69 /* JoinSessionViewController.swift */; };
+		A196BE9129493A9B002A7C69 /* JailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8A29493A9B002A7C69 /* JailViewController.swift */; };
+		A196BE9229493A9B002A7C69 /* AddJailMatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8B29493A9B002A7C69 /* AddJailMatesViewController.swift */; };
+		A196BEA429493B0D002A7C69 /* CentralBTDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEA329493B0D002A7C69 /* CentralBTDelegateProtocol.swift */; };
+		A196BEA729493B62002A7C69 /* CentralBTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEA529493B62002A7C69 /* CentralBTManager.swift */; };
+		A196BEA829493B62002A7C69 /* PeripheralBTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEA629493B62002A7C69 /* PeripheralBTManager.swift */; };
+		A196BEAC29493B6A002A7C69 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEA929493B6A002A7C69 /* Keychain.swift */; };
+		A196BEAD29493B6A002A7C69 /* PJSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEAA29493B6A002A7C69 /* PJSession.swift */; };
+		A196BEAE29493B6A002A7C69 /* PJUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEAB29493B6A002A7C69 /* PJUser.swift */; };
+		A196BEB029493B71002A7C69 /* PJUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEAF29493B70002A7C69 /* PJUserTableViewCell.swift */; };
+		A196BEB329493C4B002A7C69 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEB229493C4B002A7C69 /* Resources.swift */; };
+		D52ED4F6D1AEF8B462645287 /* Pods_Phone_Jail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4682B78A4002DB95604124 /* Pods_Phone_Jail.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92D55EEB2F721323EBD5739A /* Pods-Phone Jail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phone Jail.release.xcconfig"; path = "Target Support Files/Pods-Phone Jail/Pods-Phone Jail.release.xcconfig"; sourceTree = "<group>"; };
+		9C4682B78A4002DB95604124 /* Pods_Phone_Jail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phone_Jail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A196BE4D29493A18002A7C69 /* Phone Jail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phone Jail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A196BE5029493A18002A7C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A196BE5229493A18002A7C69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +69,23 @@
 		A196BE7029493A19002A7C69 /* Phone JailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phone JailUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A196BE7429493A19002A7C69 /* Phone_JailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone_JailUITests.swift; sourceTree = "<group>"; };
 		A196BE7629493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone_JailUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A196BE8529493A9A002A7C69 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A196BE8629493A9A002A7C69 /* CreatePJSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePJSessionViewController.swift; sourceTree = "<group>"; };
+		A196BE8729493A9A002A7C69 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A196BE8829493A9B002A7C69 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A196BE8929493A9B002A7C69 /* JoinSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinSessionViewController.swift; sourceTree = "<group>"; };
+		A196BE8A29493A9B002A7C69 /* JailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailViewController.swift; sourceTree = "<group>"; };
+		A196BE8B29493A9B002A7C69 /* AddJailMatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJailMatesViewController.swift; sourceTree = "<group>"; };
+		A196BEA329493B0D002A7C69 /* CentralBTDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralBTDelegateProtocol.swift; sourceTree = "<group>"; };
+		A196BEA529493B62002A7C69 /* CentralBTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralBTManager.swift; sourceTree = "<group>"; };
+		A196BEA629493B62002A7C69 /* PeripheralBTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralBTManager.swift; sourceTree = "<group>"; };
+		A196BEA929493B6A002A7C69 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		A196BEAA29493B6A002A7C69 /* PJSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PJSession.swift; sourceTree = "<group>"; };
+		A196BEAB29493B6A002A7C69 /* PJUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PJUser.swift; sourceTree = "<group>"; };
+		A196BEAF29493B70002A7C69 /* PJUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PJUserTableViewCell.swift; sourceTree = "<group>"; };
+		A196BEB129493B7D002A7C69 /* Phone Jail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Phone Jail.entitlements"; sourceTree = "<group>"; };
+		A196BEB229493C4B002A7C69 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		B97C211AE9458C220B6DBC80 /* Pods-Phone Jail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phone Jail.debug.xcconfig"; path = "Target Support Files/Pods-Phone Jail/Pods-Phone Jail.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52ED4F6D1AEF8B462645287 /* Pods_Phone_Jail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0681860BFAD38B7BF385A555 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B97C211AE9458C220B6DBC80 /* Pods-Phone Jail.debug.xcconfig */,
+				92D55EEB2F721323EBD5739A /* Pods-Phone Jail.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A196BE4429493A18002A7C69 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +130,8 @@
 				A196BE6929493A19002A7C69 /* Phone JailTests */,
 				A196BE7329493A19002A7C69 /* Phone JailUITests */,
 				A196BE4E29493A18002A7C69 /* Products */,
+				0681860BFAD38B7BF385A555 /* Pods */,
+				C9D50D1EA24B196C492A9A3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +148,9 @@
 		A196BE4F29493A18002A7C69 /* Phone Jail */ = {
 			isa = PBXGroup;
 			children = (
+				A196BEB129493B7D002A7C69 /* Phone Jail.entitlements */,
+				A196BEA229493AED002A7C69 /* Protocol */,
+				A196BE8329493A76002A7C69 /* Classes */,
 				A196BE5029493A18002A7C69 /* AppDelegate.swift */,
 				A196BE5229493A18002A7C69 /* SceneDelegate.swift */,
 				A196BE5429493A18002A7C69 /* ViewController.swift */,
@@ -109,6 +159,7 @@
 				A196BE5E29493A19002A7C69 /* LaunchScreen.storyboard */,
 				A196BE6129493A19002A7C69 /* Info.plist */,
 				A196BE5929493A18002A7C69 /* Phone_Jail.xcdatamodeld */,
+				A196BEB229493C4B002A7C69 /* Resources.swift */,
 			);
 			path = "Phone Jail";
 			sourceTree = "<group>";
@@ -130,6 +181,74 @@
 			path = "Phone JailUITests";
 			sourceTree = "<group>";
 		};
+		A196BE8329493A76002A7C69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A196BE9D29493AD6002A7C69 /* BTManagers */,
+				A196BE9629493ABE002A7C69 /* Core */,
+				A196BE9329493AAF002A7C69 /* TableViewCells */,
+				A196BE8429493A83002A7C69 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A196BE8429493A83002A7C69 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A196BE8B29493A9B002A7C69 /* AddJailMatesViewController.swift */,
+				A196BE8629493A9A002A7C69 /* CreatePJSessionViewController.swift */,
+				A196BE8829493A9B002A7C69 /* FirstViewController.swift */,
+				A196BE8A29493A9B002A7C69 /* JailViewController.swift */,
+				A196BE8929493A9B002A7C69 /* JoinSessionViewController.swift */,
+				A196BE8529493A9A002A7C69 /* MainViewController.swift */,
+				A196BE8729493A9A002A7C69 /* SignUpViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A196BE9329493AAF002A7C69 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A196BEAF29493B70002A7C69 /* PJUserTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		A196BE9629493ABE002A7C69 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A196BEA929493B6A002A7C69 /* Keychain.swift */,
+				A196BEAA29493B6A002A7C69 /* PJSession.swift */,
+				A196BEAB29493B6A002A7C69 /* PJUser.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A196BE9D29493AD6002A7C69 /* BTManagers */ = {
+			isa = PBXGroup;
+			children = (
+				A196BEA529493B62002A7C69 /* CentralBTManager.swift */,
+				A196BEA629493B62002A7C69 /* PeripheralBTManager.swift */,
+			);
+			path = BTManagers;
+			sourceTree = "<group>";
+		};
+		A196BEA229493AED002A7C69 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A196BEA329493B0D002A7C69 /* CentralBTDelegateProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C9D50D1EA24B196C492A9A3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C4682B78A4002DB95604124 /* Pods_Phone_Jail.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A196BE7A29493A19002A7C69 /* Build configuration list for PBXNativeTarget "Phone Jail" */;
 			buildPhases = (
+				6BA041645F246965B67A5FE3 /* [CP] Check Pods Manifest.lock */,
 				A196BE4929493A18002A7C69 /* Sources */,
 				A196BE4A29493A18002A7C69 /* Frameworks */,
 				A196BE4B29493A18002A7C69 /* Resources */,
+				0218D809F8B574D56C232C39 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,15 +377,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0218D809F8B574D56C232C39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Phone Jail/Pods-Phone Jail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Phone Jail/Pods-Phone Jail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Phone Jail/Pods-Phone Jail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BA041645F246965B67A5FE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Phone Jail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A196BE4929493A18002A7C69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A196BE5B29493A18002A7C69 /* Phone_Jail.xcdatamodeld in Sources */,
+				A196BEAE29493B6A002A7C69 /* PJUser.swift in Sources */,
+				A196BE8E29493A9B002A7C69 /* SignUpViewController.swift in Sources */,
+				A196BE9129493A9B002A7C69 /* JailViewController.swift in Sources */,
+				A196BEB329493C4B002A7C69 /* Resources.swift in Sources */,
+				A196BEA429493B0D002A7C69 /* CentralBTDelegateProtocol.swift in Sources */,
+				A196BE8D29493A9B002A7C69 /* CreatePJSessionViewController.swift in Sources */,
+				A196BEA829493B62002A7C69 /* PeripheralBTManager.swift in Sources */,
+				A196BE8F29493A9B002A7C69 /* FirstViewController.swift in Sources */,
 				A196BE5529493A18002A7C69 /* ViewController.swift in Sources */,
+				A196BEAD29493B6A002A7C69 /* PJSession.swift in Sources */,
 				A196BE5129493A18002A7C69 /* AppDelegate.swift in Sources */,
+				A196BE9029493A9B002A7C69 /* JoinSessionViewController.swift in Sources */,
+				A196BEA729493B62002A7C69 /* CentralBTManager.swift in Sources */,
 				A196BE5329493A18002A7C69 /* SceneDelegate.swift in Sources */,
+				A196BEB029493B71002A7C69 /* PJUserTableViewCell.swift in Sources */,
+				A196BE9229493A9B002A7C69 /* AddJailMatesViewController.swift in Sources */,
+				A196BE8C29493A9B002A7C69 /* MainViewController.swift in Sources */,
+				A196BEAC29493B6A002A7C69 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,12 +614,14 @@
 		};
 		A196BE7B29493A19002A7C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97C211AE9458C220B6DBC80 /* Pods-Phone Jail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Phone Jail/Phone Jail.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TC886WC3WY;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Phone Jail/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,12 +644,14 @@
 		};
 		A196BE7C29493A19002A7C69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D55EEB2F721323EBD5739A /* Pods-Phone Jail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Phone Jail/Phone Jail.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TC886WC3WY;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Phone Jail/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

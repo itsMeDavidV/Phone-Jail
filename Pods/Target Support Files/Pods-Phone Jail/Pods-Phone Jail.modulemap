@@ -1,0 +1,6 @@
+framework module Pods_Phone_Jail {
+  umbrella header "Pods-Phone Jail-umbrella.h"
+
+  export *
+  module * { export * }
+}

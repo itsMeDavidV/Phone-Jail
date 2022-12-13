@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Phone Jail
 //
-//  Created by David Villegas on 12/13/22.
+//  Created by David Villegas on 12/8/22.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var inJail: Bool = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
