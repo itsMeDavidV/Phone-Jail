@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1132B6D294BDEB30080E2E0 /* Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B6C294BDEB30080E2E0 /* Peripheral.swift */; };
+		A1132B6F294BE0CE0080E2E0 /* CentralBTManagerv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B6E294BE0CE0080E2E0 /* CentralBTManagerv2.swift */; };
+		A1132B71294CF9050080E2E0 /* AddJailMatesViewController_v2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B70294CF9050080E2E0 /* AddJailMatesViewController_v2.swift */; };
+		A1132B73294D1F170080E2E0 /* Prison.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B72294D1F170080E2E0 /* Prison.swift */; };
+		A1132B76294D1F5F0080E2E0 /* PhoneJailStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B75294D1F5F0080E2E0 /* PhoneJailStatus.swift */; };
+		A1132B78294E970D0080E2E0 /* PeripheralBTDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B77294E970D0080E2E0 /* PeripheralBTDelegate.swift */; };
+		A1132B7C2951B34E0080E2E0 /* Annoying.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B7B2951B34E0080E2E0 /* Annoying.swift */; };
 		A196BE5129493A18002A7C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5029493A18002A7C69 /* AppDelegate.swift */; };
 		A196BE5329493A18002A7C69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5229493A18002A7C69 /* SceneDelegate.swift */; };
-		A196BE5529493A18002A7C69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5429493A18002A7C69 /* ViewController.swift */; };
 		A196BE5829493A18002A7C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A196BE5629493A18002A7C69 /* Main.storyboard */; };
 		A196BE5B29493A18002A7C69 /* Phone_Jail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5929493A18002A7C69 /* Phone_Jail.xcdatamodeld */; };
 		A196BE5D29493A19002A7C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A196BE5C29493A19002A7C69 /* Assets.xcassets */; };
@@ -18,19 +24,11 @@
 		A196BE7529493A19002A7C69 /* Phone_JailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE7429493A19002A7C69 /* Phone_JailUITests.swift */; };
 		A196BE7729493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE7629493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift */; };
 		A196BE8C29493A9B002A7C69 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8529493A9A002A7C69 /* MainViewController.swift */; };
-		A196BE8D29493A9B002A7C69 /* CreatePJSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8629493A9A002A7C69 /* CreatePJSessionViewController.swift */; };
-		A196BE8E29493A9B002A7C69 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8729493A9A002A7C69 /* SignUpViewController.swift */; };
-		A196BE8F29493A9B002A7C69 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8829493A9B002A7C69 /* FirstViewController.swift */; };
+		A196BE8D29493A9B002A7C69 /* CreateSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8629493A9A002A7C69 /* CreateSessionViewController.swift */; };
 		A196BE9029493A9B002A7C69 /* JoinSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8929493A9B002A7C69 /* JoinSessionViewController.swift */; };
 		A196BE9129493A9B002A7C69 /* JailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8A29493A9B002A7C69 /* JailViewController.swift */; };
-		A196BE9229493A9B002A7C69 /* AddJailMatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE8B29493A9B002A7C69 /* AddJailMatesViewController.swift */; };
 		A196BEA429493B0D002A7C69 /* CentralBTDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEA329493B0D002A7C69 /* CentralBTDelegateProtocol.swift */; };
-		A196BEA729493B62002A7C69 /* CentralBTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEA529493B62002A7C69 /* CentralBTManager.swift */; };
 		A196BEA829493B62002A7C69 /* PeripheralBTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEA629493B62002A7C69 /* PeripheralBTManager.swift */; };
-		A196BEAC29493B6A002A7C69 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEA929493B6A002A7C69 /* Keychain.swift */; };
-		A196BEAD29493B6A002A7C69 /* PJSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEAA29493B6A002A7C69 /* PJSession.swift */; };
-		A196BEAE29493B6A002A7C69 /* PJUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEAB29493B6A002A7C69 /* PJUser.swift */; };
-		A196BEB029493B71002A7C69 /* PJUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEAF29493B70002A7C69 /* PJUserTableViewCell.swift */; };
 		A196BEB329493C4B002A7C69 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BEB229493C4B002A7C69 /* Resources.swift */; };
 		D52ED4F6D1AEF8B462645287 /* Pods_Phone_Jail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4682B78A4002DB95604124 /* Pods_Phone_Jail.framework */; };
 /* End PBXBuildFile section */
@@ -55,10 +53,16 @@
 /* Begin PBXFileReference section */
 		92D55EEB2F721323EBD5739A /* Pods-Phone Jail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phone Jail.release.xcconfig"; path = "Target Support Files/Pods-Phone Jail/Pods-Phone Jail.release.xcconfig"; sourceTree = "<group>"; };
 		9C4682B78A4002DB95604124 /* Pods_Phone_Jail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phone_Jail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1132B6C294BDEB30080E2E0 /* Peripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peripheral.swift; sourceTree = "<group>"; };
+		A1132B6E294BE0CE0080E2E0 /* CentralBTManagerv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralBTManagerv2.swift; sourceTree = "<group>"; };
+		A1132B70294CF9050080E2E0 /* AddJailMatesViewController_v2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJailMatesViewController_v2.swift; sourceTree = "<group>"; };
+		A1132B72294D1F170080E2E0 /* Prison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prison.swift; sourceTree = "<group>"; };
+		A1132B75294D1F5F0080E2E0 /* PhoneJailStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneJailStatus.swift; sourceTree = "<group>"; };
+		A1132B77294E970D0080E2E0 /* PeripheralBTDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralBTDelegate.swift; sourceTree = "<group>"; };
+		A1132B7B2951B34E0080E2E0 /* Annoying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annoying.swift; sourceTree = "<group>"; };
 		A196BE4D29493A18002A7C69 /* Phone Jail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phone Jail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A196BE5029493A18002A7C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A196BE5229493A18002A7C69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A196BE5429493A18002A7C69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A196BE5729493A18002A7C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A196BE5A29493A18002A7C69 /* Phone_Jail.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phone_Jail.xcdatamodel; sourceTree = "<group>"; };
 		A196BE5C29493A19002A7C69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,19 +74,11 @@
 		A196BE7429493A19002A7C69 /* Phone_JailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone_JailUITests.swift; sourceTree = "<group>"; };
 		A196BE7629493A19002A7C69 /* Phone_JailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone_JailUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A196BE8529493A9A002A7C69 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		A196BE8629493A9A002A7C69 /* CreatePJSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePJSessionViewController.swift; sourceTree = "<group>"; };
-		A196BE8729493A9A002A7C69 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		A196BE8829493A9B002A7C69 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A196BE8629493A9A002A7C69 /* CreateSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSessionViewController.swift; sourceTree = "<group>"; };
 		A196BE8929493A9B002A7C69 /* JoinSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinSessionViewController.swift; sourceTree = "<group>"; };
 		A196BE8A29493A9B002A7C69 /* JailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailViewController.swift; sourceTree = "<group>"; };
-		A196BE8B29493A9B002A7C69 /* AddJailMatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJailMatesViewController.swift; sourceTree = "<group>"; };
 		A196BEA329493B0D002A7C69 /* CentralBTDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralBTDelegateProtocol.swift; sourceTree = "<group>"; };
-		A196BEA529493B62002A7C69 /* CentralBTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralBTManager.swift; sourceTree = "<group>"; };
 		A196BEA629493B62002A7C69 /* PeripheralBTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralBTManager.swift; sourceTree = "<group>"; };
-		A196BEA929493B6A002A7C69 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
-		A196BEAA29493B6A002A7C69 /* PJSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PJSession.swift; sourceTree = "<group>"; };
-		A196BEAB29493B6A002A7C69 /* PJUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PJUser.swift; sourceTree = "<group>"; };
-		A196BEAF29493B70002A7C69 /* PJUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PJUserTableViewCell.swift; sourceTree = "<group>"; };
 		A196BEB129493B7D002A7C69 /* Phone Jail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Phone Jail.entitlements"; sourceTree = "<group>"; };
 		A196BEB229493C4B002A7C69 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		B97C211AE9458C220B6DBC80 /* Pods-Phone Jail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phone Jail.debug.xcconfig"; path = "Target Support Files/Pods-Phone Jail/Pods-Phone Jail.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +119,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A1132B6B294BDEA60080E2E0 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				A1132B6C294BDEB30080E2E0 /* Peripheral.swift */,
+				A1132B72294D1F170080E2E0 /* Prison.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		A1132B74294D1F230080E2E0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A1132B75294D1F5F0080E2E0 /* PhoneJailStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A1132B7D295298390080E2E0 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		A196BE4429493A18002A7C69 = {
 			isa = PBXGroup;
 			children = (
@@ -148,18 +168,21 @@
 		A196BE4F29493A18002A7C69 /* Phone Jail */ = {
 			isa = PBXGroup;
 			children = (
+				A1132B7D295298390080E2E0 /* Audio */,
+				A1132B74294D1F230080E2E0 /* Enums */,
+				A1132B6B294BDEA60080E2E0 /* Structs */,
 				A196BEB129493B7D002A7C69 /* Phone Jail.entitlements */,
 				A196BEA229493AED002A7C69 /* Protocol */,
 				A196BE8329493A76002A7C69 /* Classes */,
 				A196BE5029493A18002A7C69 /* AppDelegate.swift */,
 				A196BE5229493A18002A7C69 /* SceneDelegate.swift */,
-				A196BE5429493A18002A7C69 /* ViewController.swift */,
 				A196BE5629493A18002A7C69 /* Main.storyboard */,
 				A196BE5C29493A19002A7C69 /* Assets.xcassets */,
 				A196BE5E29493A19002A7C69 /* LaunchScreen.storyboard */,
 				A196BE6129493A19002A7C69 /* Info.plist */,
 				A196BE5929493A18002A7C69 /* Phone_Jail.xcdatamodeld */,
 				A196BEB229493C4B002A7C69 /* Resources.swift */,
+				A1132B7B2951B34E0080E2E0 /* Annoying.swift */,
 			);
 			path = "Phone Jail";
 			sourceTree = "<group>";
@@ -185,8 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				A196BE9D29493AD6002A7C69 /* BTManagers */,
-				A196BE9629493ABE002A7C69 /* Core */,
-				A196BE9329493AAF002A7C69 /* TableViewCells */,
 				A196BE8429493A83002A7C69 /* ViewControllers */,
 			);
 			path = Classes;
@@ -195,39 +216,19 @@
 		A196BE8429493A83002A7C69 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A196BE8B29493A9B002A7C69 /* AddJailMatesViewController.swift */,
-				A196BE8629493A9A002A7C69 /* CreatePJSessionViewController.swift */,
-				A196BE8829493A9B002A7C69 /* FirstViewController.swift */,
+				A1132B70294CF9050080E2E0 /* AddJailMatesViewController_v2.swift */,
+				A196BE8629493A9A002A7C69 /* CreateSessionViewController.swift */,
 				A196BE8A29493A9B002A7C69 /* JailViewController.swift */,
 				A196BE8929493A9B002A7C69 /* JoinSessionViewController.swift */,
 				A196BE8529493A9A002A7C69 /* MainViewController.swift */,
-				A196BE8729493A9A002A7C69 /* SignUpViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		A196BE9329493AAF002A7C69 /* TableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				A196BEAF29493B70002A7C69 /* PJUserTableViewCell.swift */,
-			);
-			path = TableViewCells;
-			sourceTree = "<group>";
-		};
-		A196BE9629493ABE002A7C69 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				A196BEA929493B6A002A7C69 /* Keychain.swift */,
-				A196BEAA29493B6A002A7C69 /* PJSession.swift */,
-				A196BEAB29493B6A002A7C69 /* PJUser.swift */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		A196BE9D29493AD6002A7C69 /* BTManagers */ = {
 			isa = PBXGroup;
 			children = (
-				A196BEA529493B62002A7C69 /* CentralBTManager.swift */,
+				A1132B6E294BE0CE0080E2E0 /* CentralBTManagerv2.swift */,
 				A196BEA629493B62002A7C69 /* PeripheralBTManager.swift */,
 			);
 			path = BTManagers;
@@ -237,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				A196BEA329493B0D002A7C69 /* CentralBTDelegateProtocol.swift */,
+				A1132B77294E970D0080E2E0 /* PeripheralBTDelegate.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -424,25 +426,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1132B76294D1F5F0080E2E0 /* PhoneJailStatus.swift in Sources */,
+				A1132B6D294BDEB30080E2E0 /* Peripheral.swift in Sources */,
 				A196BE5B29493A18002A7C69 /* Phone_Jail.xcdatamodeld in Sources */,
-				A196BEAE29493B6A002A7C69 /* PJUser.swift in Sources */,
-				A196BE8E29493A9B002A7C69 /* SignUpViewController.swift in Sources */,
 				A196BE9129493A9B002A7C69 /* JailViewController.swift in Sources */,
 				A196BEB329493C4B002A7C69 /* Resources.swift in Sources */,
+				A1132B71294CF9050080E2E0 /* AddJailMatesViewController_v2.swift in Sources */,
 				A196BEA429493B0D002A7C69 /* CentralBTDelegateProtocol.swift in Sources */,
-				A196BE8D29493A9B002A7C69 /* CreatePJSessionViewController.swift in Sources */,
+				A196BE8D29493A9B002A7C69 /* CreateSessionViewController.swift in Sources */,
+				A1132B78294E970D0080E2E0 /* PeripheralBTDelegate.swift in Sources */,
 				A196BEA829493B62002A7C69 /* PeripheralBTManager.swift in Sources */,
-				A196BE8F29493A9B002A7C69 /* FirstViewController.swift in Sources */,
-				A196BE5529493A18002A7C69 /* ViewController.swift in Sources */,
-				A196BEAD29493B6A002A7C69 /* PJSession.swift in Sources */,
+				A1132B7C2951B34E0080E2E0 /* Annoying.swift in Sources */,
 				A196BE5129493A18002A7C69 /* AppDelegate.swift in Sources */,
 				A196BE9029493A9B002A7C69 /* JoinSessionViewController.swift in Sources */,
-				A196BEA729493B62002A7C69 /* CentralBTManager.swift in Sources */,
 				A196BE5329493A18002A7C69 /* SceneDelegate.swift in Sources */,
-				A196BEB029493B71002A7C69 /* PJUserTableViewCell.swift in Sources */,
-				A196BE9229493A9B002A7C69 /* AddJailMatesViewController.swift in Sources */,
+				A1132B73294D1F170080E2E0 /* Prison.swift in Sources */,
+				A1132B6F294BE0CE0080E2E0 /* CentralBTManagerv2.swift in Sources */,
 				A196BE8C29493A9B002A7C69 /* MainViewController.swift in Sources */,
-				A196BEAC29493B6A002A7C69 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +629,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -659,6 +660,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

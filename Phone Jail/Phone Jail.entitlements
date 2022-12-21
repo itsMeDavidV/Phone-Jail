@@ -4,7 +4,7 @@
 <dict>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)your.keychain.access.group</string>
+		<string>$(AppIdentifierPrefix)ventures.villegas.Phone-Jail.kcGroup</string>
 	</array>
 </dict>
 </plist>

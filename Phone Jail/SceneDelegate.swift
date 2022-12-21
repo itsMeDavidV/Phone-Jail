@@ -23,11 +23,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Get the AppDelegate instance
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
-        // If the app is in the "jail" state, print "JAIL BREAK"
+        // If the app is in the "jail" state, send a jail break notification
         if appDelegate.inJail {
             print("JAIL BREAK")
+
+            // Get the prison object from the app delegate
+            var prison = appDelegate.prisonObj
+
+            // Set the status of the prison object to .jailBreak
+            prison.status = .jailBreak
+            appDelegate.prisonObj = prison
+
+            // Convert the prison object to data
+            guard let prisonData = prison.toData() else { return }
+
+            // Encode PhoneJailStatus.jailBreak as data
+            guard let statusData = try? JSONEncoder().encode(PhoneJailStatus.jailBreak) else { return }
+
+            // Call the sendData method and pass the encoded data
+            PeripheralManagerObj?.sendData(data: statusData)
+
+            // Call the sendToAllReadyPeripherals method and pass the data parameter
+            CentralDelegateObj?.sendToAllReadyPeripherals(data: prisonData)
         }
     }
+
+
 
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.

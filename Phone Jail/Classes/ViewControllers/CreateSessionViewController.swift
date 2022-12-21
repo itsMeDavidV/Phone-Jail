@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import CoreBluetooth
 
-class CreatePJSessionViewController: UIViewController {
+class CreateSessionViewController: UIViewController {
 
     var timeDurationPicker = UIPickerView()
     
@@ -16,11 +17,23 @@ class CreatePJSessionViewController: UIViewController {
     
     var nonSelectedDurationButtonOrigin: CGPoint = .zero
     
+    // Add a Prison property with a default value
+    var prison = Prison(status: .queueing, releaseDate: Date().addingTimeInterval(30 * 60), escapeeNames: nil, prisonerNames: [])
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.formView()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("CreateSessionViewController viewDidAppear")
+        print("prison = \(prison)")
+        print("centralDelegate = \(CentralDelegateObj)")
+        if CentralDelegateObj != nil {
+            CentralDelegateObj?.delegate = self
+        }
     }
     
     func formView() {
@@ -141,22 +154,28 @@ class CreatePJSessionViewController: UIViewController {
     }
     
     @objc func addJailMates() {
-        // code to be executed when jailmatesButton is tapped
-        let addJailMatesVC = AddJailMatesViewController()
-        self.present(addJailMatesVC, animated: true)
-    }
+        let addPrisonersViewController = AddPrisonersViewController(prison: prison)
+        addPrisonersViewController.prison = prison
+        addChild(addPrisonersViewController)
+        view.addSubview(addPrisonersViewController.view)
+        addPrisonersViewController.didMove(toParent: self)
+      }
     
     @objc func startButtonTapped() {
+        print("startButtonTapped")
+        
+        prison.releaseDate = Date().addingTimeInterval(selectedDuration)
+        prison.status = .inJail
+        CentralDelegateObj?.sendToAllReadyPeripherals(prison: prison)
+        
         // Create an instance of JailViewController
-        let targetDate = Date(timeIntervalSinceNow: 30) // one week from now
-        let jailViewController = JailViewController(remainingTime: 90)
+        let jailViewController = JailViewController(prison: prison)
         jailViewController.modalPresentationStyle = .fullScreen
         present(jailViewController, animated: true, completion: nil)
     }
-
 }
 
-extension CreatePJSessionViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+extension CreateSessionViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     // MARK: - UIPickerViewDataSource
 
@@ -191,7 +210,7 @@ extension CreatePJSessionViewController: UIPickerViewDataSource, UIPickerViewDel
     }
 }
 
-extension CreatePJSessionViewController {
+extension CreateSessionViewController {
     
     var selectedDurationHours: Int {
         let timeInterval: TimeInterval = self.selectedDuration
@@ -217,4 +236,26 @@ extension CreatePJSessionViewController {
         return timeString
     }
 }
+
+extension CreateSessionViewController: CentralBTDelegate {
+  // Implement the required methods from the CentralBTDelegate protocol
+
+  func didUpdateNearbyUsers(_ nearbyPeripherals: [Peripheral]) {
+    // Update the UI to reflect the new list of nearby peripherals
+  }
+
+  func didConnect(to peripheral: CBPeripheral, nearbyPeripherals: [Peripheral]) {
+    // Update the UI to reflect the connection to the peripheral
+  }
+
+  func didDisconnect(to peripheral: CBPeripheral, nearbyPeripherals: [Peripheral]) {
+    // Update the UI to reflect the disconnection from the peripheral
+  }
+
+  // Implement the optional phoneJailStatusDidChange method from the CentralBTDelegate protocol
+  func phoneJailStatusDidUpdate(_ peripheral: CBPeripheral, phoneJailStatus: PhoneJailStatus) {
+    // Add your implementation for this method here
+  }
+}
+
 

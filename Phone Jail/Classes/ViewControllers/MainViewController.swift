@@ -79,19 +79,15 @@ class MainViewController: UIViewController {
 
     @objc func startNewSession() {
         // Present a new view controller for starting a new session
-        self.present(CreatePJSessionViewController(), animated: true)
+        let createSessionViewController = CreateSessionViewController()
+        createSessionViewController.modalPresentationStyle = .fullScreen
+        self.present(CreateSessionViewController(), animated: true)
     }
 
     @objc func joinSession() {
-        // Use a guard statement to check if the User variable is not nil
-        guard let user = User else {
-            // User is nil, do not continue
-            return
-        }
-
-        // User is not nil, continue with the code
-        // Initialize the JoinSessionViewController with the user
-        let joinSessionViewController = JoinSessionViewController(user: user)
+        // Initialize the JoinSessionViewController
+        let joinSessionViewController = JoinSessionViewController()
+        joinSessionViewController.modalPresentationStyle = .fullScreen
         // Present the JoinSessionViewController
         self.present(joinSessionViewController, animated: true)
     }
