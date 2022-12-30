@@ -9,81 +9,118 @@ import Foundation
 import UIKit
 
 class MainViewController: UIViewController {
-    
+
+  // MARK: - View Lifecycle
+
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound]) { granted, error in
-            // Handle the response from the user.
-        }
-
-        // Set the background color for the view
-        self.view.backgroundColor = UIColorFromRGB(0x1d1d1d)
-
-        // Set the title color for the navigation item
-        //self.navigationItem.titleTextAttributes = [.foregroundColor: UIColor.white]
-
-        // Create the buttons
-        let newSessionButton = UIButton(type: .system)
-        newSessionButton.setTitle("New Session", for: .normal)
-        newSessionButton.backgroundColor = UIColorFromRGB(0xf78e20)
-        newSessionButton.setTitleColor(UIColor.white, for: .normal)
-
-        let joinSessionButton = UIButton(type: .system)
-        joinSessionButton.setTitle("Join Session", for: .normal)
-        joinSessionButton.backgroundColor = UIColorFromRGB(0xf78e20)
-        joinSessionButton.setTitleColor(UIColor.white, for: .normal)
-
-        // Add rounded corners and a shadow to the buttons
-        newSessionButton.layer.cornerRadius = 8
-        newSessionButton.layer.shadowOffset = CGSize(width: 2, height: 2)
-        joinSessionButton.layer.cornerRadius = 8
-        joinSessionButton.layer.shadowOffset = CGSize(width: 2, height: 2)
-
-        // Use a different font for the button titles
-        let font = UIFont(name: "Lucida Console", size: 16)
-        newSessionButton.titleLabel?.font = font
-        joinSessionButton.titleLabel?.font = font
-
-        // Calculate the button width
-        let buttonWidth = self.view.frame.width * 0.75
-
-        // Set the frames for the buttons
-        let buttonHeight: CGFloat = 50
-        let padding: CGFloat = 20
-        newSessionButton.frame = CGRect(x: self.view.center.x - (buttonWidth / 2), y: self.view.center.y - (buttonHeight + padding), width: buttonWidth, height: buttonHeight)
-        joinSessionButton.frame = CGRect(x: self.view.center.x - (buttonWidth / 2), y: newSessionButton.frame.origin.y + newSessionButton.frame.height + padding, width: buttonWidth, height: buttonHeight)
+      super.viewDidLoad()
         
-        // Add the buttons to the view
-        self.view.addSubview(newSessionButton)
-        self.view.addSubview(joinSessionButton)
+        print("viewDidLoad")
 
-        // Add action methods for the buttons
-        newSessionButton.addTarget(self, action: #selector(startNewSession), for: .touchUpInside)
-        joinSessionButton.addTarget(self, action: #selector(joinSession), for: .touchUpInside)
+        // Set the background color to a dark shade
+        view.backgroundColor = UIColor.black
+
+        // Add the background image
+        let backgroundImageView = UIImageView(image: UIImage(named: "8d9accc7-40a7-4daf-adc0-513b4ee9f4ad.jpeg"))
+        backgroundImageView.contentMode = .scaleAspectFill
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(backgroundImageView)
+        NSLayoutConstraint.activate([
+          backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
+          backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+          backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+          backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+
+        // Add the partition view
+        let partitionView = UIView()
+        partitionView.translatesAutoresizingMaskIntoConstraints = false
+        partitionView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        view.addSubview(partitionView)
+        NSLayoutConstraint.activate([
+          partitionView.topAnchor.constraint(equalTo: view.topAnchor),
+          partitionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+          partitionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+          partitionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+
+
+        // Add the title label
+        let titleLabel = UILabel()
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.text = "Phone Jail"
+        titleLabel.textColor = UIColor(white: 0.9, alpha: 1.0)
+        titleLabel.font = UIFont.systemFont(ofSize: 36, weight: .bold)
+        view.addSubview(titleLabel)
+        NSLayoutConstraint.activate([
+          titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: view.frame.height * 0.25),
+          titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        // Add the subtitle label
+        let subtitleLabel = UILabel()
+        subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        subtitleLabel.text = "Get back to irl"
+        subtitleLabel.textColor = UIColor(white: 0.8, alpha: 1.0)
+        subtitleLabel.font = UIFont.systemFont(ofSize: 24, weight: .regular)
+        view.addSubview(subtitleLabel)
+        NSLayoutConstraint.activate([
+            subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            subtitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        // Add the "Join a session" button
+        let joinButton = UIButton(type: .system)
+        joinButton.translatesAutoresizingMaskIntoConstraints = false
+        joinButton.setTitle("Join session", for: .normal)
+        joinButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        joinButton.setTitleColor(.white, for: .normal)
+        joinButton.backgroundColor = .clear
+        joinButton.layer.borderColor = UIColor.white.cgColor
+        joinButton.layer.borderWidth = 2
+        joinButton.layer.cornerRadius = 25
+        joinButton.addTarget(self, action: #selector(joinSessionButtonTapped), for: .touchUpInside)
+        view.addSubview(joinButton)
+        NSLayoutConstraint.activate([
+          joinButton.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: 30),
+          joinButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+          joinButton.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -10),
+          joinButton.heightAnchor.constraint(equalToConstant: 50)
+        ])
+
+        // Add the "Start a session" button
+        let startButton = UIButton(type: .system)
+        startButton.translatesAutoresizingMaskIntoConstraints = false
+        startButton.setTitle("Start session", for: .normal)
+        startButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        startButton.setTitleColor(.white, for: .normal)
+        startButton.backgroundColor = .clear
+        startButton.layer.borderColor = UIColor.white.cgColor
+        startButton.layer.borderWidth = 2
+        startButton.layer.cornerRadius = 25
+        startButton.addTarget(self, action: #selector(startSessionButtonTapped), for: .touchUpInside)
+        view.addSubview(startButton)
+        NSLayoutConstraint.activate([
+          startButton.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: 30),
+          startButton.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: 10),
+          startButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+          startButton.heightAnchor.constraint(equalToConstant: 50)
+        ])
+        
     }
-
-
-
-    @objc func startNewSession() {
-        // Present a new view controller for starting a new session
-        let createSessionViewController = CreateSessionViewController()
-        createSessionViewController.modalPresentationStyle = .fullScreen
-        self.present(CreateSessionViewController(), animated: true)
-    }
-
-    @objc func joinSession() {
-        // Initialize the JoinSessionViewController
-        let joinSessionViewController = JoinSessionViewController()
-        joinSessionViewController.modalPresentationStyle = .fullScreen
-        // Present the JoinSessionViewController
-        self.present(joinSessionViewController, animated: true)
-    }
-
     
-    @objc func accessSettings() {
-        // Present a new view controller for accessing settings
+    @objc func joinSessionButtonTapped() {
+      let joinSessionViewController = JoinSessionViewController()
+      joinSessionViewController.modalPresentationStyle = .fullScreen
+      present(joinSessionViewController, animated: true)
     }
+    
+    @objc func startSessionButtonTapped() {
+      let createSessionViewController = CreateSessionViewController()
+      createSessionViewController.modalPresentationStyle = .fullScreen
+      present(createSessionViewController, animated: true)
+    }
+
+
 }
 

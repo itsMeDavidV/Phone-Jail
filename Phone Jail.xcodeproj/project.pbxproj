@@ -14,6 +14,7 @@
 		A1132B76294D1F5F0080E2E0 /* PhoneJailStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B75294D1F5F0080E2E0 /* PhoneJailStatus.swift */; };
 		A1132B78294E970D0080E2E0 /* PeripheralBTDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B77294E970D0080E2E0 /* PeripheralBTDelegate.swift */; };
 		A1132B7C2951B34E0080E2E0 /* Annoying.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1132B7B2951B34E0080E2E0 /* Annoying.swift */; };
+		A14B2E64295F74A100AF58D4 /* 8d9accc7-40a7-4daf-adc0-513b4ee9f4ad.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A14B2E63295F74A100AF58D4 /* 8d9accc7-40a7-4daf-adc0-513b4ee9f4ad.jpeg */; };
 		A196BE5129493A18002A7C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5029493A18002A7C69 /* AppDelegate.swift */; };
 		A196BE5329493A18002A7C69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196BE5229493A18002A7C69 /* SceneDelegate.swift */; };
 		A196BE5829493A18002A7C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A196BE5629493A18002A7C69 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		A1132B75294D1F5F0080E2E0 /* PhoneJailStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneJailStatus.swift; sourceTree = "<group>"; };
 		A1132B77294E970D0080E2E0 /* PeripheralBTDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralBTDelegate.swift; sourceTree = "<group>"; };
 		A1132B7B2951B34E0080E2E0 /* Annoying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annoying.swift; sourceTree = "<group>"; };
+		A14B2E63295F74A100AF58D4 /* 8d9accc7-40a7-4daf-adc0-513b4ee9f4ad.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "8d9accc7-40a7-4daf-adc0-513b4ee9f4ad.jpeg"; path = "content/AI_backgrounds/8d9accc7-40a7-4daf-adc0-513b4ee9f4ad.jpeg"; sourceTree = SOURCE_ROOT; };
 		A196BE4D29493A18002A7C69 /* Phone Jail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phone Jail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A196BE5029493A18002A7C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A196BE5229493A18002A7C69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		A14B2E62295F748700AF58D4 /* AI_backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				A14B2E63295F74A100AF58D4 /* 8d9accc7-40a7-4daf-adc0-513b4ee9f4ad.jpeg */,
+			);
+			path = AI_backgrounds;
+			sourceTree = "<group>";
+		};
 		A196BE4429493A18002A7C69 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 		A196BE4F29493A18002A7C69 /* Phone Jail */ = {
 			isa = PBXGroup;
 			children = (
+				A14B2E62295F748700AF58D4 /* AI_backgrounds */,
 				A1132B7D295298390080E2E0 /* Audio */,
 				A1132B74294D1F230080E2E0 /* Enums */,
 				A1132B6B294BDEA60080E2E0 /* Structs */,
@@ -360,6 +371,7 @@
 				A196BE6029493A19002A7C69 /* LaunchScreen.storyboard in Resources */,
 				A196BE5D29493A19002A7C69 /* Assets.xcassets in Resources */,
 				A196BE5829493A18002A7C69 /* Main.storyboard in Resources */,
+				A14B2E64295F74A100AF58D4 /* 8d9accc7-40a7-4daf-adc0-513b4ee9f4ad.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
